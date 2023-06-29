@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'open sans';
+}
+.contenedor{
+    padding: 55px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+#titulo{
+    color: #ae1bd3;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+#titulo-productos{
+    font-style: italic;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#titulo-Tendencias{
+    color: #ae1bd3;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.616), hsla(317, 45%, 52%, 0.562)),url(fotos/1.jpg); 
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.534), hsla(317, 45%, 52%, 0.541)),url(fotos/5.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.Barra{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+.Barra li{
+    display: inline-block;
+}
+.Barra a{
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 15px;
+    
+}
+nav a:hover{ 
+    text-decoration: underline;
+}
+header .texto_header{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.texto_header h1{
+    font-style: italic;
+    font-size: 130px;
+    color: white;
+}
+.texto_header h2{
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/*about*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagen-somos{
+    float: left;
+    width: 45%;
+}
+
+.sobre-nosotros .contenido-textos{
+    font-size: 125%;
+    font-style: italic;
+    
+}
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5) ;
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    font-style: italic;
+    
+    padding: 0px 0px 30px 40px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+/*galeria*/
+.Productos{
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.534), hsla(317, 45%, 52%, 0.541)),url(fotos/4.jpg); 
+
+}
+.galeria-productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.imagen-producto{
+    width: 14%;
+    margin-bottom: 10px;
+  
+    overflow: relative;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(255, 0, 212);
+
+
+}
+
+.imagen-producto > img{
+    width: 100%;
+    height: 150%;
+    object-fit: conver;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(272, 43%, 83%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+   
+    color: rgb(255, 255, 255);
+}
+.imagen-producto:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*tendencias*/
+.card{
+    float: left;
+}
+
+.card >img{
+    margin-left: 30%;
+    width: 40%;
+    height: 50%;
+    object-fit: conver;
+    display: block;
+}
+.contenido-text-card h3{
+    font-style: italic;
+    font-weight: 900;
+    
+    padding: 0px 30% 0px 30%;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 33px;
+    margin-block: 1%;
+}
+.contenido-text-card p{
+font-style: italic;
+      
+    padding: 0px 30% 0px 30%;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+}
+.tips-nav{
+ 
+    text-align: center;
+    margin: 5%;
+    
+}
+.tips-nav li{
+    margin-top: 5%;
+    display: inline-block;
+    
+    margin-right: 50px;
+    
+}
+.tips-nav a{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+/*servicios*/
+.abaut-servicios{
+    text-align: center;
+}
+.servicio-ind >img{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 40%;
+    height: 50%;
+    object-fit: conver;
+    display: block;
+}
+
+/*footer*/
+footer{
+    background: linear-gradient(to right, hsla(340, 100%, 50%, 0.795), hsla(317, 45%, 52%, 0.5)); 
+}
+
+.contenedor-footer{
+    text-align: center;
+}
+footer .content-foot{
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 40px;
+    
+}
+.content-foot p{
+text-align: center;
+}
+footer .titulo-final{
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
